@@ -1,105 +1,48 @@
-<!-- WEB 13 - 문서의 구조와 슈퍼스타들 -->
-<!--title: 태그로 제목을 사용자들에게 명시적으로 알려준다.(검색엔진)
-    meta : charset 설정 => utf-8
-    head :
-    bdoy :
-    -->
 <!doctype html>
 <html>
 <head>
   <title>WEB1 - CSS</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159144382-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159144382-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-159144382-1');
-</script>
+    gtag('config', 'UA-159144382-1');
+  </script>
 
 <head/>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-<!-- WEB 12 - 부모자식과 목록 -->
-<!-- li 를 그룹핑을 하기 위해서는 ul라는 부모 태그를 묶는다. -->
-<!-- ul(Unordered List) 마크다운 표시로 숫자가 자동으로 적용은 되지 않는다. -->
-<!-- ol(Ordered List) 태그는 자동으로 숫자가 적용된다. -->
-<ol>
-  <li><a href="1.html">HTML</a></li>
-  <li><a href="2.html">CSS</a></li>
-  <li><a href="3.html">JavaScript</a></li>
-</ol>
 
-<!-- WEB 14 - HTML 태그의 제왕 -->
-<!-- a : anchor 링크!!
-     href : hypertext reference
-     # <h1>의 태그에 링크를 달고 싶으면 위와 같이 <a>태그로 감싼다.
-     # target=”_blank”로 주어서 바로 새탭으로 나타날 수 있게 만들고,
-     # title=”을 내가 원하는 이름으로 설정해서 마우스를 올려 놓으면 바로 알아볼 수 있게 한다.”
--->
-<h2>CSS</h2> <!-- 줄바꿈도 자동으로 이루어진다. + Blod -->
-  <p>
-  종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
+  <div id="grid">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol>
+    <div id="article">
+      <h2>CSS</h2> <!-- 줄바꿈도 자동으로 이루어진다. + Blod -->
+        <p>
+        종속형 시트 또는 캐스케이딩 스타일 시트(Cascading Style Sheets, CSS)는 마크업 언어가 실제 표시되는 방법을 기술하는 언어로[1], HTML과 XHTML에 주로 쓰이며, XML에서도 사용할 수 있다. W3C의 표준이며, 레이아웃과 스타일을 정의할 때의 자유도가 높다.
 
-  마크업 언어가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리 같은 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.
+        마크업 언어가 웹사이트의 몸체를 담당한다면 CSS는 옷과 액세서리 같은 꾸미는 역할을 담당한다고 할 수 있다. 즉, HTML 구조는 그대로 두고 CSS 파일만 변경해도 전혀 다른 웹사이트처럼 꾸밀 수 있다.
 
-  현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.
-  </p>
-<!-- WEB 6 -  기본문법 태그 -->
-<!--
-<strong> BOLD가 되는 문장 </strong>  # TAG
-<u> underline이라는 밑줄을 가르키는 태그 </u>
--->
-<p>1. 공부만 하지 말고 <strong>직접 프로그래밍</strong> 하라.</p>
-<br />2. 준비가 안되었다고 생각 말고 1번으로 돌아가 무언가를 만들어라.
-<br />3. 초반에 무리하지 말고 <strong>매일매일 <u>프로그래밍</u></strong>하는 습관을 들여라.
-<br />4. 리스트만 보며 공부하지 마라. 배움의 끝은 없다.
-<br />5. 데드라인을 정해서 공부하라.
-<p style="margin-top:40px;">6. 기억보단 기록을 </p>
+        현재 개발 중인 CSS3의 경우 그림자 효과, 그라데이션, 변형 등 그래픽 편집 프로그램으로 제작한 이미지를 대체할 수 있는 기능이 추가되었다. 또한 다양한 애니메이션 기능이 추가되어 어도비 플래시를 어느 정도 대체하고 있다.
+        </p>
+        <p>1. 공부만 하지 말고 <strong>직접 프로그래밍</strong> 하라.</p>
+        <br />2. 준비가 안되었다고 생각 말고 1번으로 돌아가 무언가를 만들어라.
+        <br />3. 초반에 무리하지 말고 <strong>매일매일 <u>프로그래밍</u></strong>하는 습관을 들여라.
+        <br />4. 리스트만 보며 공부하지 마라. 배움의 끝은 없다.
+        <br />5. 데드라인을 정해서 공부하라.
+        <p style="margin-top:40px;">6. 기억보단 기록을 </p
+        <img src="web1.jpg" width="450">
+    </div>
+  </div>
 
-<!-- WEB 7 - 혁명적인 변화 -->
-<!-- h1 은 headline, headings 을 뜻한다. 즉 제목이다. 1~6으로 갈수록 작아진다.-->
-
-<!-- WEB 8 - 통계를 기반으로 하는 공부
-무엇을 공부를 해야하고, 가야할 길을 판단을 하고, 현재의 점에서 선을 그어라. -->
-
-<!-- WEB 9 - 줄바꿈 : br vs p -->
-<!--
-1.
-br : break 의 약자로 개행문자를 의미한다.
-The <br> tag inserts a single line break. : 즉 태그를 추가하는 싱글 라인 브레이커이다.
-The <br> tag is an empty tag which means that it has no end tag.
-2.
-p : The HTML <p> element defines a paragraph: 즉 단락 구분을 의미한다.
-<p> 단락 구분은 p 태그를 사용한다. 문장을 넣은 다음줄을 개행문자로 단락을 구분시킨다. </p>
-
-2.1
-<p> 태그는 단락 구분이 한 번 가능하기에, 불편하기도 하지만 css 문법을 사용해서 조금 보충이 가능하다.
-<p style=”margin-top:40px”> css 문법을 사용한다. 즉 위에 여벽에서 40px밑으로 보낸다.</p>
- -->
-<p>To force<br> line breaks<br> in a text,<br> use the br<br> element.
-</p>
-
-<p>This is a paragraph.</p>
-<p style="margin-top:40px;">This is another paragraph.</p>
-
-<!-- WEB 10 - html이 중요한 이유 -->
-<!--
-웹의 핵심적인 철학은 접근성 , 누구도 저작권이 없는 개방성 (accessibility)
--> 비즈니스 측면, 휴머니즘 측면에서도 중요하다.
- -->
-
-<!--WEB 11 -최후의 문법 속성 -->
-<!-- Attribute => 위치는 상관이 없다. 태그에 이름만으로 부족할 때 사용.-->
-<img src="web1.jpg" width="450">
-
-<!-- WEB 12 - 부모자식과 목록 -->
-<!--  -->
-
-<!-- WEB 13 - 문서의 구조와 슈퍼스타들 -->
-<!--  -->
 <p>
 <div id="disqus_thread"></div>
 <script>
@@ -125,8 +68,3 @@ s.setAttribute('data-timestamp', +new Date());
 </p>
 </body>
 </html>
-
-<!-- WEB 14 - HTML 태그의 제왕 -->
-<!-- a : anchor 링크!! -->
-
-<!-- WEB 15 - 웹사이트 완성 -->
