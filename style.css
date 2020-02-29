@@ -1,8 +1,8 @@
 body{
   margin:0;
 }
-a {
-  color:black;
+a{
+  color : none;
 }
 h1 {
   font-size:45px;
@@ -11,6 +11,7 @@ h1 {
   margin:0;
   padding:20px;
 }
+
 ol{
   border-right:1px solid gray;
   width:100px;
@@ -28,14 +29,14 @@ ol{
   padding-left:25px;
 }
 /*800 px 보다 작을 때!*/
-@media(max-width:800px){
-  #grid{
-    display: block;
-  }
-  h1 {
-    border-bottom:none;
-  }
-  ol{
-    border-right:none;
-  }
+  @media(max-width:800px){
+    #grid{
+      display: block;
+    }
+    h1 {
+      border-bottom:none;
+    }
+    ol{
+      border-right:none;
+    }
 }
