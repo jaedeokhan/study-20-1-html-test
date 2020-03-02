@@ -13,45 +13,8 @@
 
     gtag('config', 'UA-159144382-1');
   </script>
-  <script>
-    function LinksSetColor(color){
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-        console.log(alist[i]);
-        alist[i].style.color = color;
-        i++;
-      }
-    }
-
-    function BodySetColor(color){
-      document.querySelector('body').style.color = color;
-    }
-
-    function BodySetBackGroundColor(color){
-      document.querySelector('body').style.backgroundColor= color;
-    }
-
-    function nigthDayHander(self){
-      var target = document.querySelector('body');
-      if(self.value === 'night')
-      {
-        Body.SetBackGroundColor('black');
-        Body.SetColor('white');
-        self.value = 'day';
-
-        Links.SetColor('powderblue');
-      }
-      else
-      {
-        Body.SetBackGroundColor('white');
-        Body.SetColor('black');
-        self.value =  'night';
-
-        Links.SetColor('blue');
-      }
-  }
-    </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="colors.js"></script>
 <head/>
 <body>
   <h1><a href="index.html">WEB</a></h1>
