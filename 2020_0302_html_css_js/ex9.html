@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>4</li>');
+        two();
+      </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <script>
+      function addNum(one,two){
+        document.write(one+two+'<br>');
+      }
+      function sumColorRed(one, two){
+        document.write('<div style="color:red">'+one + two +'</div><br>');
+      }
+      addNum(3,10);
+      sumColorRed(2,3); // 5
+      addNum(2,4); // 6
+    </script>
+    <h2>Return</h2>
+    <script>
+      function sum2(left, rigth)
+      {
+        return left+rigth;
+      }
+      document.write(sum2(2,3) + '<br>');
+      document.write('<div style="color:red">'+sum2(2,3) + '</div>');
+      document.write('<div style="font-size:3em;">'+sum2(2,3) + '</div>');
+    </script>
+  </body>
+</html>
